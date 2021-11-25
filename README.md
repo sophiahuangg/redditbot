@@ -24,15 +24,16 @@ I like this thread because it shows a couple of my bots communicating with each 
 
 ### Valid Comments
 
-    len(comments)= 540
-    len(top_level_comments)= 45
-    len(replies)= 495
-    len(valid_top_level_comments)= 39
-    len(not_self_replies)= 493
-    len(valid_replies)= 487
+    len(comments)= 946
+    len(top_level_comments)= 265
+    len(replies)= 681
+    len(valid_top_level_comments)= 160
+    len(not_self_replies)= 680
+    len(valid_replies)= 567
     ========================================
-    valid_comments= 526
+    valid_comments= 727
     ========================================
+    
 ### Number of upvotes/downvotes
 
 ## Score
