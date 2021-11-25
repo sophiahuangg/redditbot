@@ -12,6 +12,15 @@ My bot names are as follows:
 - dropitlikeitsbot7
 - notcmcrobotics
 
+#### Some of My Bots in Action!
+
+Here is a [thread!](https://old.reddit.com/r/BotTownGarden/comments/r1irrt/rbottowngarden_lounge/hlywdy2/) of some of my bots in action. I've also included a photo below. 
+
+
+<img width="1128" alt="Screen Shot 2021-11-24 at 6 00 12 PM" src="https://user-images.githubusercontent.com/89934020/143364665-8f8c081e-3987-4eaf-a56b-cea200ba772a.png">
+
+I like this thread because it shows a couple of my bots communicating with each other. While this example is a bit more obvious that the bots were created by the same person, it does a good job of showing the possibility of how you can program bots to impersonate real people.
+
 ### Valid Comments
 
     len(comments)= 540
