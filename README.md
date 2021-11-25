@@ -26,14 +26,14 @@ I like this thread because it shows a couple of my bots communicating with each 
 
 botanicalgarden7
 
-    len(comments)= 946
-    len(top_level_comments)= 265
-    len(replies)= 681
-    len(valid_top_level_comments)= 160
-    len(not_self_replies)= 680
-    len(valid_replies)= 567
+    len(comments)= 807
+    len(top_level_comments)= 52
+    len(replies)= 755
+    len(valid_top_level_comments)= 33
+    len(not_self_replies)= 755
+    len(valid_replies)= 619
     ========================================
-    valid_comments= 727
+    valid_comments= 652
     ========================================
     
 botanist77
