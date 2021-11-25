@@ -26,26 +26,26 @@ I like this thread because it shows a couple of my bots communicating with each 
 
 botanicalgarden7
 
-    len(comments)= 807
-    len(top_level_comments)= 52
-    len(replies)= 755
-    len(valid_top_level_comments)= 33
-    len(not_self_replies)= 755
-    len(valid_replies)= 619
+    len(comments)= 803
+    len(top_level_comments)= 49
+    len(replies)= 754
+    len(valid_top_level_comments)= 30
+    len(not_self_replies)= 754
+    len(valid_replies)= 621
     ========================================
-    valid_comments= 652
+    valid_comments= 651
     ========================================
     
 botanist77
 
-    len(comments)= 500
+    len(comments)= 545
     len(top_level_comments)= 59
-    len(replies)= 441
+    len(replies)= 486
     len(valid_top_level_comments)= 59
-    len(not_self_replies)= 441
-    len(valid_replies)= 441
+    len(not_self_replies)= 486
+    len(valid_replies)= 486
     ========================================
-    valid_comments= 500
+    valid_comments= 545
     ========================================
 
 notbluebottlecoffee
@@ -62,14 +62,14 @@ notbluebottlecoffee
 
 dropitlikeitsbot7
 
-    len(comments)= 777
+    len(comments)= 774
     len(top_level_comments)= 8
-    len(replies)= 769
+    len(replies)= 766
     len(valid_top_level_comments)= 8
-    len(not_self_replies)= 769
-    len(valid_replies)= 769
+    len(not_self_replies)= 766
+    len(valid_replies)= 766
     ========================================
-    valid_comments= 777
+    valid_comments= 774
     ========================================
     
 notcmcrobotics
