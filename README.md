@@ -24,6 +24,8 @@ I like this thread because it shows a couple of my bots communicating with each 
 
 ### Valid Comments
 
+botanicalgarden7
+
     len(comments)= 946
     len(top_level_comments)= 265
     len(replies)= 681
@@ -32,6 +34,30 @@ I like this thread because it shows a couple of my bots communicating with each 
     len(valid_replies)= 567
     ========================================
     valid_comments= 727
+    ========================================
+    
+dropitlikeitsbot7
+
+    len(comments)= 526
+    len(top_level_comments)= 24
+    len(replies)= 502
+    len(valid_top_level_comments)= 20
+    len(not_self_replies)= 502
+    len(valid_replies)= 502
+    ========================================
+    valid_comments= 522
+    ========================================
+    
+notcmcrobotics
+
+    len(comments)= 639
+    len(top_level_comments)= 71
+    len(replies)= 568
+    len(valid_top_level_comments)= 55
+    len(not_self_replies)= 567
+    len(valid_replies)= 567
+    ========================================
+    valid_comments= 622
     ========================================
     
 ### Number of upvotes/downvotes
@@ -48,17 +74,17 @@ I believe my score should be a /30
 6. +2 Points: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
 7. +4 Points: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. (I only downvoted/upvoted if the polarity was <-0.05 or >0.05)
 
-This is a tid bit what I saw in my terminal to help me keep track of the upvoting/downvoting:
-
-    text.sentiment.polarity= 0.5
-    numupvoted= 113
-    text.sentiment.polarity= 0.16833333333333333
-    numupvoted= 114
-    text.sentiment.polarity= 0.48333333333333334
-    numupvoted= 115
-
+This is a tid bit what I saw in my terminal to help me keep track of the upvoting/downvoting (comment downvoted refers to the submission posts while reply refers to all the replies/comments in a submission post):
     
-This is where I ended with the upvoting/downvoting since it already upvoted 1000 submissions:
-
-<img width="168" alt="Screen Shot 2021-11-24 at 9 55 59 PM" src="https://user-images.githubusercontent.com/89934020/143387631-92a24859-ce36-4b9f-a6e3-e3f4bfca6884.png">
+    numdownvoted= 131
+    comment downvoted= Tanking polls give Biden few reasons to be thankful this year
+    numdownvoted= 132
+    comment downvoted= 23 Aliens Previously Convicted of Homicide Charged With Illegal Reentry in Arizona in Biden's First 9 Months
+    numdownvoted= 133
+    reply= Biden's strategy is clearly broken. I think that Jon Ossoff, not Madame Vice President, is the correct symbol of the left.
+    numdownvoted= 134
+    ========================================
+    numdownvoted= 134
+    ========================================
+    numupvoted= 483
 
