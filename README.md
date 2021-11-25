@@ -1,6 +1,18 @@
-# redditbot
+# Overview
 
-My bot is supporting the politician Joe Biden. 
+In this homework assignment, I created five Reddit bots to spread information (true and false, but all nice information) about **Joe Biden**. I worked with madlibs to generate texts about Biden. I learned how to use the PRAW library. The link to the homework assignment guidelines can be found [here!](https://github.com/mikeizbicki/cmc-csci040/tree/2021fall/hw_04)
+
+### Bot Names
+
+My bot names are as follows:
+
+- botanicalgarden7
+- botanist77
+- notbluebottlecoffee
+- dropitlikeitsbot7
+- notcmcrobotics
+
+### Valid Comments
 
     len(comments)= 540
     len(top_level_comments)= 45
@@ -11,6 +23,7 @@ My bot is supporting the politician Joe Biden.
     ========================================
     valid_comments= 526
     ========================================
+### Number of upvotes/downvotes
 
 ## Score
 
