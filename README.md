@@ -45,5 +45,15 @@ I believe my score should be a /30
 4. +2 Points: Getting at least 500 valid comments posted.
 5. +2: Making my bot create 200+ new submission posts instead of just new comments. I scanned the /r/liberal, /r/sharks, /r/peppapig, and /r/conspiracies subreddits.
 6. +2 Points: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
-7. +4 Points: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it.
+7. +4 Points: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. (I only downvoted/upvoted if the polarity was <-0.05 or >0.05)
+
+This is a tid bit what I saw in my terminal to help me keep track of the upvoting/downvoting:
+
+    text.sentiment.polarity= 0.5
+    numupvoted= 113
+    text.sentiment.polarity= 0.16833333333333333
+    numupvoted= 114
+    text.sentiment.polarity= 0.48333333333333334
+    numupvoted= 115
+    
 
