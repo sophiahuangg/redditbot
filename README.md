@@ -47,7 +47,19 @@ botanist77
     ========================================
     valid_comments= 500
     ========================================
-    
+
+notbluebottlecoffee
+
+    len(comments)= 605
+    len(top_level_comments)= 23
+    len(replies)= 582
+    len(valid_top_level_comments)= 23
+    len(not_self_replies)= 582
+    len(valid_replies)= 580
+    ========================================
+    valid_comments= 603
+    ========================================
+
 dropitlikeitsbot7
 
     len(comments)= 526
