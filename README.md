@@ -99,7 +99,7 @@ I believe my score should be a 34/30
 7. +2 Points: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
 8. +4 Points: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. (I only downvoted/upvoted if the polarity was <-0.05 or >0.05)
 
-This is a tid bit what I saw in my terminal to help me keep track of the upvoting/downvoting:
+This is a tid bit of what I saw in my terminal to help me keep track of the upvoting/downvoting:
     
     ========================================
     numsubupvoted= 30
