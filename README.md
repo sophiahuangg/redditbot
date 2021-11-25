@@ -55,5 +55,9 @@ This is a tid bit what I saw in my terminal to help me keep track of the upvotin
     numupvoted= 114
     text.sentiment.polarity= 0.48333333333333334
     numupvoted= 115
+
     
+This is where I ended with the upvoting/downvoting since it already upvoted 1000 submissions:
+
+<img width="168" alt="Screen Shot 2021-11-24 at 9 55 59 PM" src="https://user-images.githubusercontent.com/89934020/143387631-92a24859-ce36-4b9f-a6e3-e3f4bfca6884.png">
 
