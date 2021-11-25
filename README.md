@@ -36,6 +36,18 @@ botanicalgarden7
     valid_comments= 727
     ========================================
     
+botanist77
+
+    len(comments)= 500
+    len(top_level_comments)= 59
+    len(replies)= 441
+    len(valid_top_level_comments)= 59
+    len(not_self_replies)= 441
+    len(valid_replies)= 441
+    ========================================
+    valid_comments= 500
+    ========================================
+    
 dropitlikeitsbot7
 
     len(comments)= 526
