@@ -86,19 +86,6 @@ notcmcrobotics
     
 ### Number of upvotes/downvotes
 
-## Score
-
-I believe my score should be a 34/30
-
-1. +18 Points: Completing each task in `bot.py` (6 tasks, 3 points each)
-2. +2 Points: Creating this Github Repository
-3. +2 Points: Getting at least 100 valid comments posted.
-4. +2 Points: Getting at least 500 valid comments posted.
-5. +2 Points: Created an "army" of 5 bots that are all posting similar comments. Each bot posted at least 500 valid comments to get this extra credit.
-6. +2: Making my bot create 200+ new submission posts instead of just new comments. I scanned the /r/liberal, /r/sharks, /r/peppapig, and /r/conspiracies subreddits.
-7. +2 Points: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
-8. +4 Points: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. (I only downvoted/upvoted if the polarity was <-0.05 or >0.05)
-
 This is a tid bit of what I saw in my terminal to help me keep track of the upvoting/downvoting:
     
     ========================================
@@ -110,3 +97,29 @@ This is a tid bit of what I saw in my terminal to help me keep track of the upvo
     ========================================
     numcommentdownvoted= 247
     ========================================
+
+The TextBlob sentiment library isn't the most accurate. I only downvoted/upvoted if the polarity was <-0.05 or >0.05, but I still noticed that there was some behavior that was not ideal. 
+
+For example:
+
+    commentupvoted= the VP should not have entered Biden's Cabinet. What an underwhelming pick. I hope we find a better candidate in the next election.
+    numcommentupvoted= 865
+    
+Expected behavior: downvoting the comment
+
+Received behavior: upvoting the comment
+     
+
+## Score
+
+I believe my score should be a 34/30
+
+1. +18 Points: Completing each task in `bot.py` (6 tasks, 3 points each)
+2. +2 Points: Creating this Github Repository
+3. +2 Points: Getting at least 100 valid comments posted.
+4. +2 Points: Getting at least 500 valid comments posted.
+5. +2 Points: Created an "army" of 5 bots that are all posting similar comments. Each bot posted at least 500 valid comments to get this extra credit.
+6. +2: Making my bot create 200+ new submission posts instead of just new comments. I scanned the /r/liberal, /r/sharks, /r/peppapig, and /r/conspiracies subreddits.
+7. +2 Points: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
+8. +4 Points: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. 
+
