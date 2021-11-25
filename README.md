@@ -99,17 +99,14 @@ I believe my score should be a 34/30
 7. +2 Points: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
 8. +4 Points: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. (I only downvoted/upvoted if the polarity was <-0.05 or >0.05)
 
-This is a tid bit what I saw in my terminal to help me keep track of the upvoting/downvoting (comment downvoted refers to the submission posts while reply refers to all the replies/comments in a submission post):
+This is a tid bit what I saw in my terminal to help me keep track of the upvoting/downvoting:
     
-    numdownvoted= 131
-    comment downvoted= Tanking polls give Biden few reasons to be thankful this year
-    numdownvoted= 132
-    comment downvoted= 23 Aliens Previously Convicted of Homicide Charged With Illegal Reentry in Arizona in Biden's First 9 Months
-    numdownvoted= 133
-    reply= Biden's strategy is clearly broken. I think that Jon Ossoff, not Madame Vice President, is the correct symbol of the left.
-    numdownvoted= 134
     ========================================
-    numdownvoted= 134
+    numsubupvoted= 30
     ========================================
-    numupvoted= 483
-
+    numcommentupvoted= 865
+    ========================================
+    numsubdownvoted= 12
+    ========================================
+    numcommentdownvoted= 247
+    ========================================
