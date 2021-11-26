@@ -97,7 +97,7 @@ This is a tid bit of what I saw in my terminal to help me keep track of the upvo
     numcommentdownvoted= 774
     ========================================
 
-The TextBlob sentiment library isn't the most accurate. I only downvoted/upvoted if the polarity was <-0.05 or >0.05, but I still noticed that there was some behavior that was not ideal. 
+The TextBlob sentiment library isn't the most accurate. I only downvoted/upvoted if the polarity was <-0.10 or >0.10, but I still noticed that there was some behavior that was not ideal. 
 
 For example:
 
