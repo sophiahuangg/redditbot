@@ -97,20 +97,13 @@ This is a tid bit of what I saw in my terminal to help me keep track of the upvo
     numcommentdownvoted= 774
     ========================================
 
-The TextBlob sentiment library isn't the most accurate. I only downvoted/upvoted if the polarity was <-0.10 or >0.10, but I still noticed that there was some behavior that was not ideal. 
-
-For example:
-
-    commentupvoted= the VP should not have entered Biden's Cabinet. What an underwhelming pick. I hope we find a better candidate in the next election.
-    numcommentupvoted= 865
-    
-Expected behavior: downvoting the comment
-
-Received behavior: upvoting the comment
-
 ### Markovify Example 
     mark= That is the cynical attempt by political hacks like Karl Roves to distract us from corporate scandals and a homeland security program that involves more than double what most experts thought were possible.Most of those crowds.So, when I look out over this crowd today, I know that Saddam poses no imminent and direct threat to the emergence of the previous administration and extend it to have — or very few, if needed.We succeeded in what we set the date of August 31st — as well as overland routes, allowing for continued departure to those who want to come out.I’m the fourth President who has faced the issue of whether and when I look out over this crowd today, I know there is no deadline.
 
+I used these two resources to learn more about Markovify:
+
+1. [Library](https://github.com/jsvine/markovify)
+2. [Generating Text with Markov Chains by Zach Whalen](https://www.youtube.com/watch?v=9TsuQz9lXis)
 
 ## Score
 
