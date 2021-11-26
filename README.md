@@ -1,6 +1,7 @@
 # Overview
 
-In this homework assignment, I created five Reddit bots to spread information (true and false, but all nice information) about **Joe Biden**. I worked with madlibs to generate texts about Biden. I learned how to use the PRAW library. 
+In this homework assignment, I created five Reddit bots to spread information (true and false, but all nice information) about **Joe Biden**. I worked with madlibs to generate texts about Biden, and I learned how to use the PRAW library. I also created a sixth bot to play with the Markovify library. 
+
 ### Bot Names
 
 My bot names are as follows:
@@ -104,6 +105,8 @@ I used these two resources to learn more about Markovify:
 
 1. [Library](https://github.com/jsvine/markovify)
 2. [Generating Text with Markov Chains by Zach Whalen](https://www.youtube.com/watch?v=9TsuQz9lXis)
+
+I used this [article](https://www.cnn.com/2021/11/26/politics/travel-restrictions-south-africa/index.html), this [article](https://www.whitehouse.gov/administration/president-biden/), this [speech](https://www.whitehouse.gov/briefing-room/speeches-remarks/2021/08/31/remarks-by-president-biden-on-the-end-of-the-war-in-afghanistan/), and this [transcript](https://www.npr.org/templates/story/story.php?storyId=99591469) for the Markovify portion of the homework.
 
 ## Score
 
