@@ -88,13 +88,13 @@ notcmcrobotics
 This is a tid bit of what I saw in my terminal to help me keep track of the upvoting/downvoting:
     
     ========================================
-    numsubupvoted= 30
+    numsubupvoted= 32
     ========================================
-    numcommentupvoted= 865
+    numcommentupvoted= 2185
     ========================================
-    numsubdownvoted= 12
+    numsubdownvoted= 38
     ========================================
-    numcommentdownvoted= 247
+    numcommentdownvoted= 774
     ========================================
 
 The TextBlob sentiment library isn't the most accurate. I only downvoted/upvoted if the polarity was <-0.05 or >0.05, but I still noticed that there was some behavior that was not ideal. 
