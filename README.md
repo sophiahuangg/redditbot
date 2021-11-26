@@ -107,18 +107,22 @@ For example:
 Expected behavior: downvoting the comment
 
 Received behavior: upvoting the comment
-     
+
+### Markovify Example 
+    mark= That is the cynical attempt by political hacks like Karl Roves to distract us from corporate scandals and a homeland security program that involves more than double what most experts thought were possible.Most of those crowds.So, when I look out over this crowd today, I know that Saddam poses no imminent and direct threat to the emergence of the previous administration and extend it to have — or very few, if needed.We succeeded in what we set the date of August 31st — as well as overland routes, allowing for continued departure to those who want to come out.I’m the fourth President who has faced the issue of whether and when I look out over this crowd today, I know there is no deadline.
+
 
 ## Score
 
-I believe my score should be a 34/30
+I believe my score should be a 39/30
 
-1. +18 Points: Completing each task in `bot.py` (6 tasks, 3 points each)
-2. +2 Points: Creating this Github Repository
-3. +2 Points: Getting at least 100 valid comments posted.
-4. +2 Points: Getting at least 500 valid comments posted.
-5. +2 Points: Created an "army" of 5 bots that are all posting similar comments. Each bot posted at least 500 valid comments to get this extra credit.
-6. +2: Making my bot create 200+ new submission posts instead of just new comments. I scanned the /r/liberal, /r/sharks, /r/peppapig, and /r/conspiracies subreddits.
-7. +2 Points: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
-8. +4 Points: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. 
+1. **+18 Points**: Completing each task in `bot.py` (6 tasks, 3 points each)
+2. **+2 Points**: Creating this Github Repository
+3. **+2 Points**: Getting at least 100 valid comments posted.
+4. **+2 Points**: Getting at least 500 valid comments posted.
+5. **+2 Points**: Created an "army" of 5 bots that are all posting similar comments. Each bot posted at least 500 valid comments to get this extra credit.
+6. **+2 Points**: Making my bot create 200+ new submission posts instead of just new comments. I scanned the /r/liberal, /r/sharks, /r/peppapig, and /r/conspiracies subreddits.
+7. **+2 Points**: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
+8. **+4 Points**: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. 
+9. **+5 Points**: I used the Markovify library to generate the texts of my comments. I set the `state_size=2` and generated five sentences per comment/reply.
 
