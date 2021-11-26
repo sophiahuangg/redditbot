@@ -124,5 +124,5 @@ I believe my score should be a 39/30
 6. **+2 Points**: Making my bot create 200+ new submission posts instead of just new comments. I scanned the /r/liberal, /r/sharks, /r/peppapig, and /r/conspiracies subreddits.
 7. **+2 Points**: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
 8. **+4 Points**: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. 
-9. **+5 Points**: I used the Markovify library to generate the texts of my comments for bot6. I set the `state_size=2` and generated five sentences per comment/reply.
+9. **+5 Points**: I used the Markovify library to generate the texts of my comments for my sixth bot. I set the `state_size=2` and generated five sentences per comment/reply.
 
