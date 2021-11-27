@@ -86,16 +86,18 @@ notcmcrobotics
     
 ### Number of upvotes/downvotes
 
+**I only upvoted if the polarity was >0.1 and downvoted if the polarity was <-0.1**
+
 This is a tid bit of what I saw in my terminal to help me keep track of the upvoting/downvoting:
     
     ========================================
-    numsubupvoted= 32
+    numsubupvoted= 25
     ========================================
-    numcommentupvoted= 2185
+    numcommentupvoted= 1943
     ========================================
-    numsubdownvoted= 38
+    numsubdownvoted= 16
     ========================================
-    numcommentdownvoted= 774
+    numcommentdownvoted= 451
     ========================================
 
 ### Markovify Example 
