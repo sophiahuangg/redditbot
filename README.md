@@ -152,7 +152,7 @@ I believe my score should be a 39/30
 8. **+4 Points**: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. 
 9. **+5 Points**: I used the Markovify library to generate the texts of my comments for some of my bots. I generated five sentences per comment/reply.
 
-### Not Completed
+### Not Completed:
 
 1.  Getting at least 1000 valid comments posted.
 2.  Using GPT-2-Simple to generate text.
