@@ -98,7 +98,7 @@ botinayacht (with Markovify)
 
 ### Number of upvotes/downvotes
 
-**I only upvoted if the polarity was >0.1 and downvoted if the polarity was <-0.1**
+**I only upvoted if the polarity was >0.1 and downvoted if the polarity was <-0.1** I noticed that the Textblob sentiment analysis doesn't always behave ideally. By this, I mean that some comments that I expected to get downvoted were upvoted and vice versa. I decided to increase the threshold for downvoting/upvoting to account for some of this discrepancy. My thought was that if a post/comment has a polarity very close to zero, it is very hard to distinguish whether it is truly a negative, positive, or neutral sentiment. Therefore, I didn't want my bot to perform actions on posts/comments that had a polarity close to zero.
 
 This is a tid bit of what I saw in my terminal to help me keep track of the upvoting/downvoting in /r/BotTownGarden:
 
@@ -127,11 +127,11 @@ This is a tid bit of what I saw in my terminal to help me keep track of the upvo
 
     mark=  We face threats from al-Shabaab in Somalia; al Qaeda affiliates in Syria and Iraq, and establishing affiliates across Africa and Asia. I have just taken the sacred oath each of these moments, enough of us came together to carry all of us forward. We will honor them by becoming the people and nation we know we can and we must complete this mission, and we will. For weeks, they risked their lives to get American citizens, Afghans who helped us, and others taken to safety in the last 12 hours or so, another 7,000 have gotten out. For weeks, they risked their lives to get American citizens, Afghans who helped us, and others taken to safety in the last 11 days.
     
-As I increased the state size, I also increased the number of tries it took to generate a sentence. 
+As I increased the state size, I also increased the number of tries it took to generate a sentence. I wanted my bot to imitate how Biden talks during his speeches.
 
 I used these two resources to learn more about Markovify:
 
-1. [Library](https://github.com/jsvine/markovify)
+1. [Markovify Library](https://github.com/jsvine/markovify)
 2. [Generating Text with Markov Chains by Zach Whalen](https://www.youtube.com/watch?v=9TsuQz9lXis)
 
 I used [Biden's inaugural address](https://www.whitehouse.gov/briefing-room/speeches-remarks/2021/01/20/inaugural-address-by-president-joseph-r-biden-jr/), [Biden's remarks on Afghanistan](https://www.whitehouse.gov/briefing-room/speeches-remarks/2021/08/31/remarks-by-president-biden-on-the-end-of-the-war-in-afghanistan/), and [Biden's remarks on the terror attack at Hamid Karzai International Airport](https://www.whitehouse.gov/briefing-room/speeches-remarks/2021/08/26/remarks-by-president-biden-on-the-terror-attack-at-hamid-karzai-international-airport/) for the Markovify portion of the homework.
@@ -139,6 +139,8 @@ I used [Biden's inaugural address](https://www.whitehouse.gov/briefing-room/spee
 ## Score
 
 I believe my score should be a 39/30
+
+### Completed:
 
 1. **+18 Points**: Completing each task in `bot.py` (6 tasks, 3 points each)
 2. **+2 Points**: Creating this Github Repository
@@ -149,4 +151,9 @@ I believe my score should be a 39/30
 7. **+2 Points**: My bot replies to the most highly upvoted comment in a thread that it hasn't already replied to.
 8. **+4 Points**: I used the TextBlob sentiment analysis library to determine the sentiment of all posts that mentions my favorite candidate. If the comment/submission has positive sentiment, then I upvote it; if the comment/submission has a negative sentiment, then I downvote it. 
 9. **+5 Points**: I used the Markovify library to generate the texts of my comments for some of my bots. I generated five sentences per comment/reply.
+
+### Not Completed
+
+1.  Getting at least 1000 valid comments posted.
+2.  Using GPT-2-Simple to generate text.
 
