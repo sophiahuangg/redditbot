@@ -120,5 +120,4 @@ while True:
     submission=random.choice(hot)
 
 
-    #friending my other bots
     time.sleep(10)
