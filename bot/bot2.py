@@ -81,12 +81,12 @@ def score(comment):
 
 
 # connect to reddit 
-reddit = praw.Reddit('bot',user_agent='cs40')
+reddit = praw.Reddit('bot2',user_agent='cs40')
 
 
 # select a "home" submission in the /r/BotTown subreddit to post to,
 # and put the url below
-submission_url = 'https://old.reddit.com/r/BotTownFriends/comments/r1z46a/new_test/?'
+submission_url = 'https://old.reddit.com/r/BotTownGarden/comments/r3gaqm/chris_murphy_pence_walkout_a_multi_million_dollar/'
 submission = reddit.submission(url=submission_url)
 
 # each iteration of this loop will post a single comment;
@@ -113,7 +113,7 @@ while True:
     
     submission.comments.replace_more(limit=None)
     #all_comments = []
-    all_comments = submission.comments.list()
+    all_comments=submission.comments.list()
     
     
     # HINT: 
@@ -135,7 +135,7 @@ while True:
     # and an if statement to check whether the comment is authored by you or not
     not_my_comments = []
     for comment in all_comments:
-        if str(comment.author)!='botanicalgarden7':
+        if str(comment.author)!='notbluebottlecoffee':
             not_my_comments.append(comment)
 
     # HINT:
@@ -155,6 +155,8 @@ while True:
     has_not_commented = len(not_my_comments) == len(all_comments)
     print('has_not_commented=', has_not_commented)
     
+
+    
     if has_not_commented:
         # FIXME (task 2)
         # if you have not made any comment in the thread, then post a top level comment
@@ -163,10 +165,13 @@ while True:
         # use the generate_comment() function to create the text,
         # and the .reply() function to post it to reddit;
         # a top level comment is created when you reply to a post instead of a message
+
         text=generate_comment()
         submission.reply(text)
-        time.sleep(10)
-
+        time.sleep(1)
+        pass
+    
+    
     else:
         # FIXME (task 3): filter the not_my_comments list to also remove comments that 
         # you've already replied to
@@ -174,14 +179,13 @@ while True:
         # there are many ways to accomplish this, but my solution uses two nested for loops
         # the outer for loop loops over not_my_comments,
         # and the inner for loop loops over all the replies of the current comment from the outer loop,
-        # and then an if statement checks whether the comment is authored by you or not      
+        # and then an if statement checks whether the comment is authored by you or not
+       
         comments_without_replies = []
-
         for comment in not_my_comments:
-            #print('comment=',comment)
             replied=False
-            for reply in list(comment.replies):
-                if str(reply.author)=='botanicalgarden7':
+            for reply in comment.replies:
+                if str(reply.author)=='notbluebottlecoffee':
                     replied=True
             if replied==False:
                 comments_without_replies.append(comment)
@@ -191,6 +195,7 @@ while True:
         # and so you will have to be careful to check that this code is in fact working correctly
         
         print('len(comments_without_replies)=',len(comments_without_replies))
+
 
         # FIXME (task 4): randomly select a comment from the comments_without_replies list,
         # and reply to that comment
@@ -202,27 +207,28 @@ while True:
         # so they will not be replies to a post but replies to a message
 
         if len(comments_without_replies)>0:
-            #comment=random.choice(comments_without_replies)
+
+            #comment=sorted(scores,key=score,reverse=True)
             try:
+                #comment=random.choice(comments_without_replies)
                 comment=sorted(comments_without_replies,key=lambda comments: comments.score,reverse=True)[0]
                 comment.reply(generate_comment())
             except praw.exceptions.APIException:
                 pass
-            time.sleep(20)
+            time.sleep(10)
 
 
     # FIXME (task 5): select a new submission for the next iteration;
     # your newly selected submission should be randomly selected from the 5 hottest submissions
-    subreddit = reddit.subreddit("BotTownFriends")
+    subreddit = reddit.subreddit("BotTownGarden")
     hot= list(subreddit.hot(limit=5))
     submission=random.choice(hot)
    
     
     pass
 
-
     # We sleep just for 1 second at the end of the while loop.
     # This doesn't avoid rate limiting
     # (since we're not sleeping for a long period of time),
     # but it does make the program's output more readable.
-    time.sleep(5)
+    time.sleep(10)

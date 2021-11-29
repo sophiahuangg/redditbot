@@ -81,12 +81,12 @@ def score(comment):
 
 
 # connect to reddit 
-reddit = praw.Reddit('bot',user_agent='cs40')
+reddit = praw.Reddit('bot4',user_agent='cs40')
 
 
 # select a "home" submission in the /r/BotTown subreddit to post to,
 # and put the url below
-submission_url = 'https://old.reddit.com/r/BotTownFriends/comments/r1z46a/new_test/?'
+submission_url = 'https://old.reddit.com/r/BotTownFriends/comments/r1ep0c/rbottownfriends_lounge/'
 submission = reddit.submission(url=submission_url)
 
 # each iteration of this loop will post a single comment;
@@ -113,7 +113,7 @@ while True:
     
     submission.comments.replace_more(limit=None)
     #all_comments = []
-    all_comments = submission.comments.list()
+    all_comments=submission.comments.list()
     
     
     # HINT: 
@@ -135,7 +135,7 @@ while True:
     # and an if statement to check whether the comment is authored by you or not
     not_my_comments = []
     for comment in all_comments:
-        if str(comment.author)!='botanicalgarden7':
+        if str(comment.author)!='notcmcrobotics':
             not_my_comments.append(comment)
 
     # HINT:
@@ -165,7 +165,6 @@ while True:
         # a top level comment is created when you reply to a post instead of a message
         text=generate_comment()
         submission.reply(text)
-        time.sleep(10)
 
     else:
         # FIXME (task 3): filter the not_my_comments list to also remove comments that 
@@ -181,7 +180,7 @@ while True:
             #print('comment=',comment)
             replied=False
             for reply in list(comment.replies):
-                if str(reply.author)=='botanicalgarden7':
+                if str(reply.author)=='notcmcrobotics':
                     replied=True
             if replied==False:
                 comments_without_replies.append(comment)
@@ -203,6 +202,7 @@ while True:
 
         if len(comments_without_replies)>0:
             #comment=random.choice(comments_without_replies)
+            #comment=sorted(scores,key=score,reverse=True)
             try:
                 comment=sorted(comments_without_replies,key=lambda comments: comments.score,reverse=True)[0]
                 comment.reply(generate_comment())
@@ -225,4 +225,4 @@ while True:
     # This doesn't avoid rate limiting
     # (since we're not sleeping for a long period of time),
     # but it does make the program's output more readable.
-    time.sleep(5)
+    time.sleep(1)
